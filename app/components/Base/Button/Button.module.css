@@ -1,0 +1,11 @@
+.button{
+  background-color: rgb(246, 248, 250);
+  border: 1px solid rgba(31, 35, 40, 0.15);
+  border-radius: var(--border-radius);
+  color: rgb(var(--color));
+  padding: var(--space-size-xs);
+  transition-duration: var(--transition-duration);
+  font-size: var(--font-size);
+  cursor: pointer;
+  font-weight: var(--font-weight);
+}

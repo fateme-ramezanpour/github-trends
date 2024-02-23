@@ -1,0 +1,6 @@
+.heading{
+  background-color: rgb(var(--card-color));
+  text-align: center;
+  font-size: var(--font-size-large);
+  padding: var(--space-size);
+}

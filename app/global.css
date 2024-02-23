@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: var(--font-size);
+  color: var(--font-color);
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+}
+
+main {
+  min-height: 82vh;
+  padding: 0;
+}
+
+header {
+  min-height: 8vh;
+}
+
+footer {
+  min-height: 10vh;
+}
+
+:root {
+  --color: 255, 255, 255;
+  --font-color: 36, 41, 47;
+  --font-color-light: 97, 96, 96;
+  --border-color: 32, 33, 37;
+  --light-gray : 222, 222, 222;
+  --dark-gray: 101, 109, 118;
+  --dark-black: 31, 35, 40;
+  --light-yellow: 239, 224, 86;
+  --card-color: 246,247,249;
+  --button-color-on-hover: 46, 164, 226;
+  --border-radius: 5px 5px 5px 5px;
+  --space-size-xs: 5px;
+  --space-size-s: 15px;
+  --space-size: 20px;
+  --font-weight: 500;
+  --font-size: 1rem;
+  --font-size-medium: 1.2rem;
+  --font-size-large: 1.5rem;
+  --font-size-small: .8rem;
+  --transition-duration: 0.4s;
+}

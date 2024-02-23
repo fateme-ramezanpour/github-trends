@@ -1,0 +1,6 @@
+.container{
+  max-width: 1012px;
+  margin: 10px auto;
+  border: 1px solid rgb(var(--light-gray));
+  border-radius: var(--border-radius);
+}

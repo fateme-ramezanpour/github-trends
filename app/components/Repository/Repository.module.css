@@ -1,0 +1,56 @@
+.card {
+  margin: var(--space-size);
+  padding: var(--space-size);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(var(--light-gray));
+}
+.card:last-child{
+  border-bottom: none;
+}
+.star {
+  min-width: 120px
+}
+
+.starIcon {
+  font-size: var(--font-size);
+  color: rgb(var(--dark-gray));
+  vertical-align: middle;
+}
+
+.starText {
+  margin-left: 10px;
+  font-size: var(--font-size-small);
+  color: rgb(var(--font-color));
+  align-self: center;
+  vertical-align: middle;
+}
+
+.starCount {
+  font-size: var(--font-size);
+  margin-left: 10px;
+  color: rgb(var(--font-color-light));
+  background-color: rgba(var(--dark-black), 0.08);
+  text-shadow: none;
+  vertical-align: top;
+  border-radius: var(--border-radius);
+  padding: 1px 8px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.clicked {
+  fill: rgb(var(--light-yellow));
+}
+
+.language{
+  font-style: italic;
+  color: rgb(var(--dark-gray));
+  font-size: var(--font-size-small);
+}
+
+.description {
+  padding: 10px 0;
+}
