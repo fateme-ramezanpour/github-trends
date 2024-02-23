@@ -21,7 +21,7 @@ const RepositoryCard = ({ repository, index, filter }: StarCardType) => {
   return (
     <>
       {showCard &&
-        <div data-testid="repository-card" className={styles.card}>
+        <article data-testid="repository-card" className={styles.card}>
           <div>
             <h2>
               <a
@@ -45,7 +45,7 @@ const RepositoryCard = ({ repository, index, filter }: StarCardType) => {
               index={index}
               repository={repository} />
           </div>
-        </div>
+        </article>
       }
     </>
 
