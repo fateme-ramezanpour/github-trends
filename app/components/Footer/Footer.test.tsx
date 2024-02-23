@@ -5,7 +5,7 @@ describe('render Footer component', () => {
   it('render copyright text', () => {
     render(<Footer />);
     expect(
-      screen.getByText('© 2024 Your Company Name. All rights reserved.')
+      screen.getByText('© 2024 Github. All rights reserved.')
     ).toBeInTheDocument();
   });
 })
