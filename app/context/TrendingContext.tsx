@@ -14,6 +14,7 @@ const TrendingContext = createContext<TrendingContextType | undefined>(undefined
 export const TrendingContextProvider = (
   { children }: { children: React.ReactNode }
 ) => {
+  const [allData, setAllData] = useState<RepositoryType[] | null>(null);
   const [data, setData] = useState<RepositoryType[] | null>(null);
   const [languages, setLanguages] = useState<string[]>([]);
 
@@ -26,11 +27,21 @@ export const TrendingContextProvider = (
         stargazers_count: localStargazersCount(repo)
       }));
 
-      setLanguages(getAllLanguages(data))
+      setLanguages(getAllLanguages(data));
+      setAllData(staredData);
       setData(staredData);
     };
     fetchData();
   }, []);
+
+  const filterData = (filter: { star: boolean, language: string }) => {
+    const newData = allData?.filter(repo => {
+      if (filter.star && !repo.stared) return false;
+      if (filter.language !== "all" && repo.language !== filter.language) return false;
+      return true;
+    });
+    setData(newData || []);
+  }
 
   const getAllLanguages = (data: RepositoryType[] | null) => {
     if (!data) return [];
@@ -68,7 +79,8 @@ export const TrendingContextProvider = (
     data,
     setData,
     starRepository,
-    languages
+    languages,
+    filterData
   };
 
   return (

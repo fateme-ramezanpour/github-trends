@@ -1,0 +1,4 @@
+.text{
+  padding: var(--space-size);
+  text-align: center;
+}
