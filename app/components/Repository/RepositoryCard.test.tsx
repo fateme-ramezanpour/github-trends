@@ -22,7 +22,7 @@ describe('RepositoryCard Component', () => {
         <RepositoryCard
           repository={mockRepository}
           index={0}
-          filter={{star: false, language: 'all'}} />
+        />
       );
 
       expect(getByTestId("repository-card")).toBeInTheDocument();
@@ -39,7 +39,7 @@ describe('RepositoryCard Component', () => {
         <RepositoryCard
           repository={{ ...mockRepository, stared: true }}
           index={0}
-          filter={{star: true, language: 'all'}} />
+        />
       );
 
       expect(getByTestId("repository-card")).toBeInTheDocument();
@@ -50,7 +50,7 @@ describe('RepositoryCard Component', () => {
         <RepositoryCard
           repository={{ ...mockRepository, stared: false }}
           index={0}
-          filter={{star: true, language: 'all'}} />
+        />
       );
 
       expect(queryByText("repository-card")).toBeNull();
